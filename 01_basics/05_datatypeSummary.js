@@ -35,3 +35,27 @@ myFunction()
 console.log(typeof myFunction)
 // type of myFuncion is --> funcion which is object
 // --> OBJECT funcion or funciont OBJECT
+
+///////////////////////////////////////////////////////////////
+
+// Memory -> Stack (primitive), Heap (non-primitive)
+
+let name = "myName"
+let nextName = name
+nextName = "myNewName"
+
+console.log(nextName)
+console.log(name)
+
+// non premitive data --> Heap memory
+let userOne = {
+    userId: "id1",
+    userUPI: "abcd1"
+
+}
+
+let userTwo = userOne
+userTwo.userUPI = "abcd2"
+
+console.log(userOne)
+console.log(userTwo)
